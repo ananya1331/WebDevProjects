@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadLibs.io</title>
+    <link rel="stylesheet" href="madlibs_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MadLibs.io</h1>
+            <p>Fill in the blanks with the requested words and generate your own fun story!</p>
+        </header>
+        <section class="form-section">
+            <form id="madLibsForm">
+                <!-- Form fields will be dynamically inserted here -->
+            </form>
+            <button id="generateButton" onclick="generateMadLib()">Generate Story</button>
+            <button id="playAgainButton" onclick="resetForm()" style="display: none;">Play Again?</button>
+        </section>
+        <section id="storyDisplay" class="story-section">
+            <!-- Generated story will be displayed here -->
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

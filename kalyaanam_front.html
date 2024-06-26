@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कल्याण</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        nav {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('charity-bg.jpg') no-repeat center center/cover;
+            color: white;
+            height: 50vh;
+            text-align: center;
+            padding-top: 100px;
+        }
+        header h1 {
+            font-size: 3em;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+            flex-grow: 1;
+        }
+        .charity {
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 10px;
+            display: inline-block;
+            width: 200px;
+            vertical-align: top;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 5px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        body:hover footer {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Charities</a>
+        <a href="#">Donate</a>
+        <a href="#">Programs</a>
+        <a href="#">Contact Us</a>
+    </nav>
+
+    <header>
+        <h1>कल्याण</h1>
+        <p>आज दान कर, कल्याण कर</p>
+    </header>
+
+    <section>
+        <h2>Featured Charities</h2>
+        <div class="charity">
+            <h3>Charity 1</h3>
+            <p>Brief description of Charity 1.</p>
+        </div>
+        <div class="charity">
+            <h3>Charity 2</h3>
+            <p>Brief description of Charity 2.</p>
+        </div>
+        <div class="charity">
+            <h3>Charity 3</h3>
+            <p>Brief description of Charity 3.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 कल्याण. All rights reserved.</p>
+    </footer>
+</body>
+</html>
